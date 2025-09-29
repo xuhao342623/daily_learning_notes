@@ -29,8 +29,8 @@ int main(int argc, char** argv)
     ros::Publisher cmd_pub = nh.advertise<geometry_msgs::Twist>("/cmd_vel", 10);
 
     geometry_msgs::Twist cmd_vel;
-    double linear_speed = 0.1;   // 线速度 (m/s)
-    double angular_speed = 0.5;  // 角速度 (rad/s)
+    double linear_speed = 0.1;   /// 线速度 (m/s)
+    double angular_speed = 0.5;  /// 角速度 (rad/s)
 
     cout << "键盘控制小车: W=前进, S=后退, A=左转, D=右转, Q=停止, E=退出" << endl;
 
